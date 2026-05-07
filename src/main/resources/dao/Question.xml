@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.img.api.dao.QuestionDao">
+
+    <select id="findList" parameterType="com.img.api.dto.QuestionDTO" resultType="com.img.api.dto.QuestionDTO">
+        select
+        question.*
+        from question question
+        <where>
+            <if test="id != null and id != ''">and question.id = #{id}</if>
+            <if test="img != null and img != ''">and question.img = #{img}</if>
+            <if test="title != null and title != ''">and question.title like concat('%',#{title},'%')</if>
+            <if test="answerA != null and answerA != ''">and question.answer_a = #{answerA}</if>
+            <if test="answerB != null and answerB != ''">and question.answer_b = #{answerB}</if>
+            <if test="answerC != null and answerC != ''">and question.answer_c = #{answerC}</if>
+            <if test="answerD != null and answerD != ''">and question.answer_d = #{answerD}</if>
+            <if test="answer != null and answer != ''">and question.answer = #{answer}</if>
+            <if test="status != null and status != ''">and question.status = #{status}</if>
+            <if test="createTime != null and createTime != ''">and question.create_time = #{createTime}</if>
+        </where>
+        <if test="current != null and pageSize != null">
+            limit #{current},#{pageSize}
+        </if>
+    </select>
+
+    <select id="findPageCount" parameterType="com.img.api.dto.QuestionDTO" resultType="java.lang.Integer">
+        select count(*) from question question
+        <where>
+            <if test="id != null and id != ''">and question.id = #{id}</if>
+            <if test="img != null and img != ''">and question.img = #{img}</if>
+            <if test="title != null and title != ''">and question.title like concat('%',#{title},'%')</if>
+            <if test="answerA != null and answerA != ''">and question.answer_a = #{answerA}</if>
+            <if test="answerB != null and answerB != ''">and question.answer_b = #{answerB}</if>
+            <if test="answerC != null and answerC != ''">and question.answer_c = #{answerC}</if>
+            <if test="answerD != null and answerD != ''">and question.answer_d = #{answerD}</if>
+            <if test="answer != null and answer != ''">and question.answer = #{answer}</if>
+            <if test="status != null and status != ''">and question.status = #{status}</if>
+            <if test="createTime != null and createTime != ''">and question.create_time = #{createTime}</if>
+        </where>
+    </select>
+
+</mapper>

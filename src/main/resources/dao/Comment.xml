@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.img.api.dao.CommentDao">
+
+    <select id="findList" parameterType="com.img.api.dto.CommentDTO" resultType="com.img.api.dto.CommentDTO">
+        select
+        comment.*,
+        users.nick_name,
+        users.head_img,
+        knowledge.title,
+        knowledge.banner_img
+        from comment comment
+        left join users users on comment.user_id = users.id
+        left join knowledge knowledge on comment.knowledge_id = knowledge.id
+        <where>
+            <if test="id != null and id != ''">and comment.id = #{id}</if>
+            <if test="content != null and content != ''">and comment.content = #{content}</if>
+            <if test="userId != null and userId != ''">and comment.user_id = #{userId}</if>
+            <if test="knowledgeId != null and knowledgeId != ''">and comment.knowledge_id = #{knowledgeId}</if>
+            <if test="toUserId != null and toUserId != ''">and comment.to_user_id = #{toUserId}</if>
+            <if test="parentId != null and parentId != ''">and comment.parent_id = #{parentId}</if>
+            <if test="nickName != null and nickName != ''">and users.nick_name like concat('%',#{nickName},'%')</if>
+            <if test="headImg != null and headImg != ''">and users.head_img = #{headImg}</if>
+            <if test="title != null and title != ''">and knowledge.title like concat('%',#{title},'%')</if>
+        </where>
+        <if test="current != null and pageSize != null">
+            limit #{current},#{pageSize}
+        </if>
+    </select>
+
+    <select id="findPageCount" parameterType="com.img.api.dto.CommentDTO" resultType="java.lang.Integer">
+        select count(*) from comment comment
+        left join users users on comment.user_id = users.id
+        left join knowledge knowledge on comment.knowledge_id = knowledge.id
+        <where>
+            <if test="id != null and id != ''">and comment.id = #{id}</if>
+            <if test="content != null and content != ''">and comment.content = #{content}</if>
+            <if test="userId != null and userId != ''">and comment.user_id = #{userId}</if>
+            <if test="knowledgeId != null and knowledgeId != ''">and comment.knowledge_id = #{knowledgeId}</if>
+            <if test="toUserId != null and toUserId != ''">and comment.to_user_id = #{toUserId}</if>
+            <if test="parentId != null and parentId != ''">and comment.parent_id = #{parentId}</if>
+            <if test="nickName != null and nickName != ''">and users.nick_name like concat('%',#{nickName},'%')</if>
+            <if test="headImg != null and headImg != ''">and users.head_img = #{headImg}</if>
+            <if test="title != null and title != ''">and knowledge.title like concat('%',#{title},'%')</if>
+        </where>
+    </select>
+
+</mapper>

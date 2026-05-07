@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.img.api.dao.KnowledgeDao">
+
+    <select id="findList" parameterType="com.img.api.dto.KnowledgeDTO" resultType="com.img.api.dto.KnowledgeDTO">
+        select
+        knowledge.*
+        from knowledge knowledge
+        left join types types on knowledge.type_id = types.id
+        <where>
+            <if test="id != null and id != ''">and knowledge.id = #{id}</if>
+            <if test="bannerImg != null and bannerImg != ''">and knowledge.banner_img = #{bannerImg}</if>
+            <if test="typeId != null and typeId != ''">and knowledge.type_id = #{typeId}</if>
+            <if test="content != null and content != ''">and knowledge.content = #{content}</if>
+            <if test="info != null and info != ''">and knowledge.info = #{info}</if>
+            <if test="createTime != null and createTime != ''">and knowledge.create_time = #{createTime}</if>
+            <if test="title != null and title != ''">and knowledge.title like concat('%',#{title},'%')</if>
+        </where>
+        <if test="current != null and pageSize != null">
+            limit #{current},#{pageSize}
+        </if>
+    </select>
+
+    <select id="findPageCount" parameterType="com.img.api.dto.KnowledgeDTO" resultType="java.lang.Integer">
+        select count(*) from knowledge knowledge
+        left join types types on knowledge.type_id = types.id
+        <where>
+            <if test="id != null and id != ''">and knowledge.id = #{id}</if>
+            <if test="bannerImg != null and bannerImg != ''">and knowledge.banner_img = #{bannerImg}</if>
+            <if test="typeId != null and typeId != ''">and knowledge.type_id = #{typeId}</if>
+            <if test="content != null and content != ''">and knowledge.content = #{content}</if>
+            <if test="info != null and info != ''">and knowledge.info = #{info}</if>
+            <if test="createTime != null and createTime != ''">and knowledge.create_time = #{createTime}</if>
+            <if test="title != null and title != ''">and knowledge.title like concat('%',#{title},'%')</if>
+        </where>
+    </select>
+
+</mapper>

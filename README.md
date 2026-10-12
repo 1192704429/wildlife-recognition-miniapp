@@ -16,7 +16,7 @@
 | 管理员 | 管理后台 |
 
 
-![功能模块图](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/azhou_promotion/img/module_structure/func_module_431ede2c6531485ca070528a41692ca5.png)
+![功能模块图](docs/images/01-func-module.png)
 
 
 ## 三、技术栈说明
@@ -47,51 +47,51 @@
 
 注册页：填写账号密码，完成小程序账号注册
 
-![注册页：填写账号密码，完成小程序账号注册](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/ab191d91-c50b-4c17-8b78-6a554889c6ea.jpg)
+![注册页：填写账号密码，完成小程序账号注册](docs/images/02-zhu-ce.png)
 
 登录页：输入账号密码，登录图片识别小程序
 
-![登录页：输入账号密码，登录图片识别小程序](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/0915f2a7-80c5-4c74-812f-de287e6b0c42.jpg)
+![登录页：输入账号密码，登录图片识别小程序](docs/images/03-deng-lu.png)
 
 植物识别页：上传植物图片提交，完成植物识别
 
-![植物识别页：上传植物图片提交，完成植物识别](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/aa58edaf-b6cb-4993-8ee2-2822d68c4538.jpg)
+![植物识别页：上传植物图片提交，完成植物识别](docs/images/04-zhi-wu-shi-bie.png)
 
 识别物品详情页：展示识别得到的月季花的科普百科详情
 
-![识别物品详情页：展示识别得到的月季花的科普百科详情](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/a18eaa26-f287-428d-82d6-e28c7ba52396.jpg)
+![识别物品详情页：展示识别得到的月季花的科普百科详情](docs/images/05-shi-bie-wu-pin-xiang-qing.png)
 
 科普文章列表页：展示哺乳动物分类下的科普文章列表
 
-![科普文章列表页：展示哺乳动物分类下的科普文章列表](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/13c63bb5-0ad4-40b2-8a1c-976f93d08761.jpg)
+![科普文章列表页：展示哺乳动物分类下的科普文章列表](docs/images/06-ke-pu-wen-zhang-lie-biao.png)
 
 列表页：展示已保存的识别物种，支持分类检索
 
-![列表页：展示已保存的识别物种，支持分类检索](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/3a56a248-0e0d-4edb-85d8-ba6a5fd5549d.jpg)
+![列表页：展示已保存的识别物种，支持分类检索](docs/images/07-lie-biao.png)
 
 文章详情页：展示哺乳动物科普内容，支持用户评论
 
-![文章详情页：展示哺乳动物科普内容，支持用户评论](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/a216d08e-aa81-4b5f-8a99-3e52d56772c3.jpg)
+![文章详情页：展示哺乳动物科普内容，支持用户评论](docs/images/08-wen-zhang-xiang-qing.png)
 
 每日一题页：展示每日科普选择题，支持切换上下题
 
-![每日一题页：展示每日科普选择题，支持切换上下题](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/dea06f68-7296-40c1-8745-2a37e24235f3.jpg)
+![每日一题页：展示每日科普选择题，支持切换上下题](docs/images/09-mei-ri-yi-ti.png)
 
 识别记录列表页：展示用户识别历史，支持筛选搜索识别记录
 
-![识别记录列表页：展示用户识别历史，支持筛选搜索识别记录](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/51e99b4c-0b66-4d98-8fea-cdcb1fd714e8.jpg)
+![识别记录列表页：展示用户识别历史，支持筛选搜索识别记录](docs/images/10-shi-bie-ji-lu-lie-biao.png)
 
 首页：展示各识别功能入口，可跳转对应功能
 
-![首页：展示各识别功能入口，可跳转对应功能](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/29c4bad9-465e-4e19-84b0-3ee99731438e.jpg)
+![首页：展示各识别功能入口，可跳转对应功能](docs/images/11-shou-ye.png)
 
 个人中心页：展示个人中心功能，可修改信息修改密码退出登录
 
-![个人中心页：展示个人中心功能，可修改信息修改密码退出登录](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/6337ce29-172a-4028-867e-002beddeab25.jpg)
+![个人中心页：展示个人中心功能，可修改信息修改密码退出登录](docs/images/12-ge-ren-zhong-xin.png)
 
 修改密码页：输入新旧密码，完成个人账号密码修改
 
-![修改密码页：输入新旧密码，完成个人账号密码修改](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/966fa8a7-4548-4dcf-81a0-e85c08640923.jpg)
+![修改密码页：输入新旧密码，完成个人账号密码修改](docs/images/13-xiu-gai-mi-ma.png)
 
 
 ###### 管理后台
@@ -109,39 +109,39 @@
 
 登录页：管理员输入账号密码登录图片识别后台
 
-![登录页：管理员输入账号密码登录图片识别后台](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/e5635dee-71a2-494d-8a99-f78c1fe90a0e.jpg)
+![登录页：管理员输入账号密码登录图片识别后台](docs/images/14-deng-lu.png)
 
 用户管理页：展示系统用户列表，支持对用户进行管理操作
 
-![用户管理页：展示系统用户列表，支持对用户进行管理操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/7604f361-aea2-4501-8a44-f3cab47b27ac.jpg)
+![用户管理页：展示系统用户列表，支持对用户进行管理操作](docs/images/15-yong-hu-guan-li.png)
 
 知识分类管理页：管理科普知识分类，支持增删改操作
 
-![知识分类管理页：管理科普知识分类，支持增删改操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/00063f95-1498-4c48-8c2e-d1dade239fa4.jpg)
+![知识分类管理页：管理科普知识分类，支持增删改操作](docs/images/16-zhi-shi-fen-lei-guan-li.png)
 
 博物馆知识库管理页：管理员管理博物馆知识库的科普物种条目
 
-![博物馆知识库管理页：管理员管理博物馆知识库的科普物种条目](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/c72bfcee-244f-471f-8909-d7ec52418864.jpg)
+![博物馆知识库管理页：管理员管理博物馆知识库的科普物种条目](docs/images/17-bo-wu-guan-zhi-shi-ku-guan-li.png)
 
 博物馆知识库管理：修改博物馆知识库的科普条目信息
 
-![博物馆知识库管理：修改博物馆知识库的科普条目信息](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/ab51184a-279c-4c89-8309-5eaa97d180c8.jpg)
+![博物馆知识库管理：修改博物馆知识库的科普条目信息](docs/images/18-bo-wu-guan-zhi-shi-ku-guan-li.png)
 
 科普文章管理：管理科普知识，支持搜索增删改操作
 
-![科普文章管理：管理科普知识，支持搜索增删改操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/a0aa0ed5-9541-4983-829b-f98d35622980.jpg)
+![科普文章管理：管理科普知识，支持搜索增删改操作](docs/images/19-ke-pu-wen-zhang-guan-li.png)
 
 科普文章管理：编辑修改哺乳动物科普文章的相关信息
 
-![科普文章管理：编辑修改哺乳动物科普文章的相关信息](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/0b7bb407-6df8-4651-83de-ef02946d0fa7.jpg)
+![科普文章管理：编辑修改哺乳动物科普文章的相关信息](docs/images/20-ke-pu-wen-zhang-guan-li.png)
 
 题库管理页：展示题目列表，可对题目进行增删改操作
 
-![题库管理页：展示题目列表，可对题目进行增删改操作](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/89324f71-e97a-4246-8824-fc9753736abc.jpg)
+![题库管理页：展示题目列表，可对题目进行增删改操作](docs/images/21-ti-ku-guan-li.png)
 
 评价管理页：管理员查看和删除用户对科普内容的评价
 
-![评价管理页：管理员查看和删除用户对科普内容的评价](https://code-graden-server-dev.oss-cn-beijing.aliyuncs.com/2026-05-07/4b218234-2b87-4e90-8748-ec78344b4f54.jpg)
+![评价管理页：管理员查看和删除用户对科普内容的评价](docs/images/22-ping-jia-guan-li.png)
 
 
 ## 五、主要业务流程
